@@ -1,8 +1,9 @@
 # docker-ionic
-An image to be used with Gitlab CI including 
+An image containing ionic-angular
 
 - Ionic 3
 - Cordova
+- Ionic Angular
 - node & npm
 - Java
 - Android SDK
@@ -13,28 +14,26 @@ An image to be used with Gitlab CI including
 
 ### Pull from Docker Hub
 ```
-docker pull marcomaisel/ionic:latest
+docker pull nitincypher/docker-ionic:latest
 ```
 
 ### Build from GitHub Repository
 ```
-docker build -t marcomaisel/ionic github.com/marcomaisel/docker-ionic
+docker build -t nitincypher/docker-ionic
 ```
 
 ### Run image
 ```
-docker run -it marcomaisel/ionic bash
+docker run -it nitincypher/docker-ionic bash
 ```
 
 ### Use as base image
 ```Dockerfile
-FROM marcomaisel/ionic:latest
+FROM nitincypher/docker-ionic:latest
 ```
 
 -----
 
 ### Inspired by
-https://github.com/marcoturi/ionic-docker
+https://github.com/marcomaisel/docker-ionic
 
-### Docker Garbage Collection by
-https://github.com/spotify/docker-gc
