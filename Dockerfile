@@ -21,6 +21,7 @@ RUN apt-get update &&  \
     apt-get install -y nodejs && \
     npm install -g npm@"5.6.0" && \
     npm install -g cordova@"8.0.0" ionic@"3.19.0" yarn@"1.3.2" && \
+    npm install -g ionic-angular && \
     npm cache clear --force && \
     wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
     dpkg --unpack google-chrome-stable_current_amd64.deb && \
